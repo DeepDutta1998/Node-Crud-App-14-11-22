@@ -1,0 +1,213 @@
+<%- include("layouts/header")%>
+<body>
+  <div class="container">
+    <h1>Student Registration Form</h1>
+    <form action="/update" method="post">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Title</label>
+              <input
+                type="text"
+                class="form-control"
+                name="title"
+                id="firstName"
+                required
+                value="<%= response.title%>"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="firstName"
+              id="firstName"
+              required
+              value="<%= response.firstName%>"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="lastName"
+              id="lastName"
+              required
+              value="<%= response.lastName%>"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="">Position</label>
+            <input
+              type="text"
+              class="form-control"
+              name="title"
+              id="firstName"
+              required
+              value="<%= response.position%>"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="">Company</label>
+            <input
+              type="text"
+              class="form-control"
+              name="title"
+              id="firstName"
+              required
+              value="<%= response.company%>"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="">Business Area</label>
+            <input
+              type="text"
+              class="form-control"
+              name="title"
+              id="firstName"
+              required
+              value="<%= response.businessArea%>"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="">Employees</label>
+            <input
+              type="text"
+              class="form-control"
+              name="title"
+              id="firstName"
+              required
+              value="<%= response.Employee%>"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="">Street</label>
+            <input
+              type="text"
+              class="form-control"
+              name="title"
+              id="firstName"
+              required
+              value="<%= response.street%>"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="">Additional Infor</label>
+            <input
+              type="text"
+              class="form-control"
+              name="title"
+              id="firstName"
+              required
+              value="<%= response.adinfo%>"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="">Zip</label>
+            <input
+              type="text"
+              class="form-control"
+              name="title"
+              id="firstName"
+              required
+              value="<%= response.zip%>"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="">Place</label>
+            <input
+              type="text"
+              class="form-control"
+              name="title"
+              id="firstName"
+              required
+              value="<%= response.place%>"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="">Country</label>
+            <input
+              type="text"
+              class="form-control"
+              name="title"
+              id="firstName"
+              required
+              value="<%= response.country%>"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="">Code</label>
+            <input
+              type="text"
+              class="form-control"
+              name="title"
+              id="firstName"
+              required
+              value="<%= response.code%>"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              id="email"
+              required
+              value="<%= response.email%>"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="">Contact Number</label>
+            <input
+              type="number"
+              class="form-control"
+              name="contactNumber"
+              id="contactNumber"
+              required
+              value="<%= response.contactNumber%>"
+            />
+          </div>
+        </div>
+      </div>
+      <input type="hidden" name="id" value="<%= response._id%>">
+      <a href="/student-view">Student List</a>
+      <button type="submit" class="btn btn-primary btn-lg btn-block">
+        Update
+      </button>
+    </form>
+  </div>
+</body>
+

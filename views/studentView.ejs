@@ -1,0 +1,54 @@
+<%- include("layouts/header")%>
+<div class="container">
+  <div class="signup-content">
+      <div class="signup-form">
+          <h2 class="form-title">Registered Members</h2>
+          <table class="table table-striped" border="20px solid black">
+              <thead>
+                <tr>
+                  <th scope="row"></i></th>
+                  <th scope="row">Title</th>
+                  <th scope="row">First Name</th>
+                  <th scope="row">Last Name</th>
+                  <th scope="row">Position</th>
+                  <th scope="row">Company</th>
+                  <th scope="row">Business Area</th>
+                  <th scope="row">Employee</th>
+                  <th scope="row">Street</th>
+                  <th scope="row">Additional Info</th>
+                  <th scope="row">Zip</th>
+                  <th scope="row">Place</th>
+                  <th scope="row">Country</th>
+                  <th scope="row">Code</th>
+                  <th scope="row">Email</th>
+                  <th scope="row">Contact Number</th>
+                  <th scope="row">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% let i=1; studentData.map(data => {%>
+                <br>
+                  <td><i class="zmdi zmdi-account material-icons-name"></i></td>
+                  <td><%= data.title%></td>
+                  <td><%= data.firstName%></td>
+                  <td><%= data.lastName%></td>
+                  <td><%= data.position%></td>
+                  <td><%= data.company%></td>
+                  <td><%= data.businessArea%></td>
+                  <td><%= data.employees%></td>
+                  <td><%= data.street%></td>
+                  <td><%= data.adinfo%></td>
+                  <td><%= data.zip%></td>
+                  <td><%= data.place%></td>
+                  <td><%= data.country%></td>
+                  <td><%= data.code%></td>
+                  <td><%= data.email%></td>
+                  <td><%= data.contactNumber%></td>
+                  <td><a href="edit/<%= data._id%>">Edit</a></td>
+                  <td><a href="delete/<%= data._id%>">Delete</a></td>
+                </tr>
+                <%})%>
+              </tbody>
+            </table>
+  </div>
+</div>
